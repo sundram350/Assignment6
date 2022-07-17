@@ -1,0 +1,127 @@
+Ans=1
+int main()
+{
+    int i,n,sum=0;
+    printf("Enter N number ");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+        sum+=i;
+    printf("%d ",sum);
+}
+
+Ans=2
+int main()
+{
+    int i,n,sum=0;
+    printf("Enter N number ");
+    scanf("%d",&n);
+    for(i=0;i<=n*2;i+=2)
+        sum+=i;
+    printf("%d ",sum);
+    return 0;
+}
+
+Ans=3
+int main()
+{
+    int i,n,sum=0;
+    printf("Enter N number ");
+    scanf("%d",&n);
+    for(i=1;i<=n*2;i+=2)
+        sum+=i;
+    printf("%d ",sum);
+    return 0;
+}
+
+Ans=4
+int main()
+{
+    int i=1,n,sum=0;
+    printf("Enter N number ");
+    scanf("%d",&n);
+    while(i<=n){
+        sum=sum+(i*i);
+        i++;
+    }
+    printf("%d ",sum);
+    return 0;
+}
+
+Ans=5
+int main()
+{
+    int i=1,n,sum=0;
+    printf("Enter N number ");
+    scanf("%d",&n);
+    while(i<=n){
+        sum=sum+(i*i*i);
+        i++;
+    }
+    printf("%d ",sum);
+    return 0;
+}
+
+Ans=6
+int main()
+{
+    int i=1,n,sum=1;
+    printf("Enter N number ");
+    scanf("%d",&n);
+    while(n>=i){
+        sum=sum*n;
+        n--;
+    }
+    printf("%d ",sum);
+    return 0;
+}
+
+Ans=7
+int main()
+{
+    int i,n,sum=0;
+    printf("Enter N number ");
+    scanf("%d",&n);
+    while(n)
+    {
+
+        n/=10;
+        sum++;
+    }
+    printf("%d ",sum);
+    return 0;
+}
+
+Ans=8
+int main()
+{
+    int n,i;
+    printf("Enter N number ");
+    scanf("%d",&n);
+    for(i=2;i<n;i++)
+        if(n%i==0)
+            break;
+    if(n==i)
+        printf("Prime ");
+    else
+        printf("Not Prime ");
+    return 0;
+}
+
+Ans=9
+
+
+Ans=10
+int main()
+{
+    int i,n,sum=0;
+    printf("Enter Number ");
+    scanf("%d",&n);
+    while (n)
+    {
+        i=n%10;
+        n/=10;
+        sum=(sum*10)+i;
+    }
+    printf("%d ",sum);
+    return 0;
+}
